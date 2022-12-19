@@ -168,13 +168,78 @@ loopUntil(4);
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. 
 La funzione salta automaticamente i valori non numerici nell'array.
 */
+console.log(
+  "\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Es 7>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n"
+);
+const arrNumeriEStringhe = [
+  1,
+  2,
+  "ASF",
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  "asd",
+  2,
+  5,
+  "dfuSHSD",
+  "DFIH",
+  0,
+  1,
+  2,
+  3,
+  4,
+];
+const average = (arrDiNumeri) => {
+  let somma = 0;
+  let contatore = 0;
+  for (let i = 0; i < arrDiNumeri.length; i++) {
+    if (typeof arrDiNumeri[i] === "number") {
+      somma += arrDiNumeri[i];
+      contatore++;
+    }
+  }
+  const mediaAritmetica = somma / contatore;
+  return mediaAritmetica;
+};
+console.log(average(arrNumeriEStringhe));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
+console.log(
+  "\n<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<Es 8>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>\n"
+);
+const arrConTanteStringhe = [
+  "rea",
+  "una",
+  "unzione",
+  "chiamata",
+  "longest",
+  "che",
+  "trova",
+  "la ",
+  "tringa",
+  "lunga",
+  "all'interno",
+  "array di stringhe fornito",
+];
+const longest = function (arrDiStringhe) {
+  let arrPiuLungo = [];
+  for (let i = 0; i < arrDiStringhe.length; i++) {
+    arrPiuLungo = arrDiStringhe[0];
+    if (arrDiStringhe[i].length > arrPiuLungo.length)
+      [(arrPiuLungo = arrDiStringhe[i])];
+  }
+  return arrPiuLungo;
+};
 
+console.log(longest(arrConTanteStringhe));
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* EXTRA 9
